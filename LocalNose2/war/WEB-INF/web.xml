@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>localnose</servlet-name>
+		<jsp-file>/jsp/localnose.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>thanks</servlet-name>
+		<jsp-file>/jsp/thanks.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>sorry</servlet-name>
+		<jsp-file>/jsp/sorry.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>savequery</servlet-name>
+		<servlet-class>ca.mcgill.localnose.SaveQueryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryall</servlet-name>
+		<servlet-class>ca.mcgill.localnose.QueryAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>localnose</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>savequery</servlet-name>
+		<url-pattern>/query</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>thanks</servlet-name>
+		<url-pattern>/thanks</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sorry</servlet-name>
+		<url-pattern>/sorry</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryall</servlet-name>
+		<url-pattern>/queryall</url-pattern>
+	</servlet-mapping>
+</web-app>
