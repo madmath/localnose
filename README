@@ -1,0 +1,14 @@
+Localnose -- A local Q&A application based on Google App Engine.
+
+This application was built by
+
+Mathieu Perreault (mathieu.perreault@gmail.com)
+Simon Pouliot (simpoul@gmail.com)
+
+as part of a Hackathon event that only lasted 7 hours.
+
+The result can be seen at http://localnose.appspot.com
+
+It is not recommended that users use this code directly as not all files were checked in (Google App Engine boilerplate files were not included). Users should look at this code as inspiration for their App Engine app. 
+
+The code is not tested or documented very much, but it's in the spirit of hackathons :)
